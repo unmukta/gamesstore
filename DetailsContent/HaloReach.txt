@@ -1,0 +1,38 @@
+<div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../images/GameImagesFull/HaloReachFullSize.jpg" class="img-fluid" id="image" alt="Halo Reach">
+                    </div>
+                    <div class="col-md-4">
+                        <h1 id="name">Halo Reach</h1>
+                        <h2>Price</h2>
+                        <h4 id="price">₹1230.00</h4>
+                        <h2>Platform(s)</h2>
+                        <h4>PC, Playstation 3, Xbox 360, Playstation 4, Xbox One</h4>
+                    
+                        <h2>About</h2>
+                        <h4>Halo is a historic franchise and one of the first ever “First Person Shooter” games. 
+                        Uncover the secrets of the covenant playing as the powerful Spartan as the last line of defense of humanity.
+                        </h4>   
+                        <div class="embed-responsive embed-responsive-4by3 ">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/18-_9E0HNY4"allowfullscreen></iframe>
+                            </div>                          
+                        <h2>Questions?</h2>
+                        <h4><a href="../pages/Contact.html" id="detailsPageLink">Contact us here.</a></h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Buy today</h2>
+                        <div class="form-group">
+                            <label for="qty">Quantity</label>
+                            <select class="form-control" id="qty">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        <button id="addToCartButton" onclick="AddToCart()" class="btn" style="display:block; margin-top:10px; width:200px;background-color: #a43a10;color: white;">Add to cart.</button>
+                    </div>
+                </div>
+            </div>

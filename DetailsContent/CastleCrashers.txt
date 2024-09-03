@@ -1,0 +1,38 @@
+<div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../images/GameImagesFull/CastleCrashersFullSize.jpg" class="img-fluid" id="image" alt="Castle Crashers">
+                    </div>
+                    <div class="col-md-4">
+                        <h1 id="name">Castle Crashers</h1>
+                        <h2>Price</h2>
+                        <h4 id="price">₹414.00</h4>
+                        <h2>Platform(s)</h2>
+                        <h4>PlayStation 4, Xbox One,PlayStation 3, Xbox 360, PC</h4>
+                     
+                        <h2>About</h2>
+                        <h4>Experience one of the most popular RPGs of all time in Castle Crashers. Play as a wide 
+                        variety of characters with dozens of weapons, powers, and levels in this wacky arcade-style game!
+                        </h4>    
+                        <div class="embed-responsive embed-responsive-4by3 ">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bu6Kwvd695w"allowfullscreen></iframe>
+                            </div>                          
+                        <h2>Questions?</h2>
+                        <h4><a href="../pages/Contact.html" id="detailsPageLink">Contact us here.</a></h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Buy today</h2>
+                        <div class="form-group">
+                            <label for="qty">Quantity</label>
+                            <select class="form-control" id="qty">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        <button id="addToCartButton" onclick="AddToCart()" class="btn" style="display:block; margin-top:10px; width:200px;background-color: #a43a10;color: white;">Add to cart.</button>
+                    </div>
+                </div>
+            </div>

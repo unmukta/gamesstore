@@ -1,0 +1,39 @@
+<div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../images/GameImagesFull/MinecraftFullSize.jpg" class="img-fluid" id="image" alt="Minecraft">
+                    </div>
+                    <div class="col-md-4">
+                        <h1 id="name">Minecraft</h1>
+                        <h2>Price</h2>
+                        <h4 id="price">₹2900.00</h4>
+                        <h2>Platform(s)</h2>
+                        <h4>Windows, macOS, Linux, Android, iOS, iPadOS, Xbox 360, Raspberry Pi, Windows Phone, PlayStation 3
+                        , Fire OS, PlayStation 4, Xbox One, PlayStation Vita, Wii U, Apple TV, tvOS, Nintendo Switch, New Nintendo 3DS</h4>
+                    
+                        <h2>About</h2>
+                        <h4>Experience the best-selling video game in history with the groundbreaking sandbox phenomenon known as Minecraft. 
+                        Survive the dangerous night, build to your heart’s content, play minigames with your friends. Anything is possible in Minecraft.
+                        </h4>
+                        <div class="embed-responsive embed-responsive-4by3 ">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MmB9b5njVbA" "allowfullscreen></iframe>
+                            </div>                            
+                        <h2>Questions?</h2>
+                        <h4><a href="../pages/Contact.html" id="detailsPageLink">Contact us here.</a></h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Buy today</h2>
+                        <div class="form-group">
+                            <label for="qty">Quantity</label>
+                            <select class="form-control" id="qty">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        <button id="addToCartButton" onclick="AddToCart()" class="btn" style="display:block; margin-top:10px; width:200px;background-color: #a43a10;color: white;">Add to cart.</button>
+                    </div>
+                </div>
+            </div>

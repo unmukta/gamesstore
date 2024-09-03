@@ -1,0 +1,33 @@
+<div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../images/GameImagesFull/NWCFullSize.png" class="img-fluid" id="image" alt="Nintendo World Championship">
+                    </div>
+                    <div class="col-md-4">
+                        <h1 id="name">Nintendo World Championship</h1>
+                        <h2>Price</h2>
+                        <h4 id="price">₹2255,000.00</h4>
+                        <h2>Platform(s)</h2>
+                        <h4>Nintendo Entertainment System</h4>
+                   
+                        <h2>About</h2>
+                        <h4>The rarest video game in the world! Get your hands on this historic cartridge before it’s gone!
+                        </h4>   
+                        <div class="embed-responsive embed-responsive-4by3 ">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CS48y6DuPg4" "allowfullscreen></iframe>
+                            </div>                         
+                        <h2>Questions?</h2>
+                        <h4><a href="../pages/Contact.html" id="detailsPageLink">Contact us here.</a></h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Buy today</h2>
+                        <div class="form-group">
+                            <label for="qty">Quantity</label>
+                            <select class="form-control" id="qty">
+                              <option>1</option>
+                            </select>
+                        </div>
+                        <button id="addToCartButton" onclick="AddToCart()" class="btn" style="display:block; margin-top:10px; width:200px;background-color: #a43a10;color: white;">Add to cart.</button>
+                    </div>
+                </div>
+            </div>

@@ -1,0 +1,43 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: #5B5747;
+    font-family: 'Arial', sans-serif; /* Change the font to Arial or any preferred font */
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://media.discordapp.net/attachments/1208691808016793620/1211624846384169010/ZGrB.gif?ex=65eee092&is=65dc6b92&hm=a8e4fe454b5021838dc55e06b00d16d6773352950aff842c86cef751a2195c54&=);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2vw;
+    color: #fff;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 50px;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: background-color 0.6s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change the font for the button */
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333; /* Change the text color on hover */
+}

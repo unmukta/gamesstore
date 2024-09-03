@@ -1,0 +1,40 @@
+<div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../images/GameImagesFull/SkyrimFullSize.jpg" class="img-fluid" id="image" alt="Skyrim">
+                    </div>
+                    <div class="col-md-4">
+                        <h1 id="name">Skyrim</h1>
+                        <h2>Price</h2>
+                        <h4 id="price">₹1600.00</h4>
+                    
+                        <h2>Platform(s)</h2>
+                        <h4>PC, Playstation 3, Xbox 360, Playstation 4, Xbox One</h4>
+                      
+                        <h2>About</h2>
+                        <h4>Skyrim boasts a massive and beautiful open world, a complex and layered story, 
+                        and endless customization. Be anything you want from cabbage farmer to world-class 
+                        assassin in the game-changing RPG Skyrim: The Elder Scrolls 5.
+                        </h4>
+                        <div class="embed-responsive embed-responsive-4by3 ">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JSRtYpNRoN0" "allowfullscreen></iframe>
+                            </div>                             
+                        <h2>Questions?</h2>
+                        <h4><a href="../pages/Contact.html" id="detailsPageLink">Contact us here.</a></h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Buy today</h2>
+                        <div class="form-group">
+                            <label for="qty">Quantity</label>
+                            <select class="form-control" id="qty">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        <button id="addToCartButton" onclick="AddToCart()" class="btn" style="display:block; margin-top:10px; width:200px;background-color: #a43a10;color: white;">Add to cart.</button>
+                    </div>
+                </div>
+            </div>

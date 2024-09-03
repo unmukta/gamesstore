@@ -1,0 +1,38 @@
+<div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="../images/GameImagesFull/Banjo-KazooieFullSize.jpg" class="img-fluid" id="image" alt="Banjo-Kazooie Nuts & Bolts">
+                    </div>
+                    <div class="col-md-4">
+                        <h1 id="name">Banjo-Kazooie Nuts & Bolts</h1>
+                        <h2>Price</h2>
+                        <h4 id="price">₹3220.00</h4>
+                        <h2>Platform(s)</h2>
+                        <h4>Xbox One, Xbox 360</h4>
+                        
+                        <h2>About</h2>
+                        <h4>Step back into the shoes of one of the most iconic gaming duos of all time in Banjo-Kazooie Nuts & Bolts. 
+                        Gruntilda is back and you must take control of the legendary Bear & Bird combo to defeat her!
+                        </h4> 
+			<div class="embed-responsive embed-responsive-4by3 ">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ags1qktdKco"allowfullscreen></iframe>
+                            </div>                                     
+                        <h2>Questions?</h2>
+                        <h4><a href="../pages/Contact.html" id="detailsPageLink">Contact us here.</a></h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Buy today</h2>
+                        <div class="form-group">
+                            <label for="qty">Quantity</label>
+                            <select class="form-control" id="qty">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        <button id="addToCartButton" onclick="AddToCart()" style="display:block; margin-top:10px; width:200px;background-color: #a43a10;color: white;">Add to cart.</button>
+                    </div>
+                </div>
+            </div>

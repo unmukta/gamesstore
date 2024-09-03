@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Shop for Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link type="text/css" rel="stylesheet" href="../css/site.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/site.js"></script>
+    <script type="text/javascript" src="../js/shop.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong ">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="https://media.discordapp.net/attachments/1208691808016793620/1211625976283533332/LegionGamingLogo-removebg-preview.gif?ex=65eee19f&is=65dc6c9f&hm=f0da3c91eac612a4ab94638769aae3b37b54fd98d461aa6e1bfcaa1a159505fb&=&width=467&height=350" alt="Logo08" class="logo08"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="../PAGE-2.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Contact.html" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Shop.html" class="nav-link">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Faq.html" class="nav-link">FAQ</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="grey" class="bi bi-cart4" viewBox="0 0 16 16">
+    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+</svg></a></li>
+                        <li id="itemsInCart" style="background-color: #a43a10;color: white;"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div style="margin:auto;width:30%;padding-top:10px;padding-bottom:10px;">
+            <div class="input-group">
+                <input type="search"
+                       class="form-control rounded"
+                       placeholder="Search"
+                       aria-label="Search"
+                       id="gameSearch" />
+                <button type="button" class="btn btn-bg" id="gameSearchButton">Search</button>
+                <button type="button" class="btn btn-bg" id="gameSearchClearButton">Clear</button>
+            </div>
+        </div>
+        <div class="pagecolor">
+
+            <div class="container-fluid" style="text-align: center;">
+
+                <div class="row">
+                    <div class="col-3 border border-3 border-dark rounded" id="filters" style="text-align: left;">                        
+                        <h1 class="fw-bolder" style="text-align: center;">Filters</h2> <br />
+                        <div id="filterMargin">
+                        <h2>Genre</h2>
+                        <div class="form-check" onclick="HandleFilter('action')">
+                            <input class="form-check-input filter" type="checkbox" value="" id="actionFilter">
+                            <label class="form-check-label" for="actionFilter">
+                              Action
+                            </label>
+                        </div>
+                        <div class="form-check" onclick="HandleFilter('puzzle')">
+                            <input class="form-check-input filter" type="checkbox" value="" id="puzzleFilter">
+                            <label class="form-check-label" for="puzzleFilter">
+                              Puzzle
+                            </label>
+                        </div>
+                        <div class="form-check" onclick="HandleFilter('shooter')">
+                            <input class="form-check-input filter" type="checkbox" value="" id="shooterFilter">
+                            <label class="form-check-label" for="shooterFilter">
+                              Shooter
+                            </label>
+                        </div>
+                        <div class="form-check" onclick="HandleFilter('simulation')">
+                            <input class="form-check-input filter" type="checkbox" value="" id="simulationFilter">
+                            <label class="form-check-label" for="simulationFilter">
+                              Simulation
+                            </label>
+                        </div>
+                        <div class="form-check" onclick="HandleFilter('platformer')">
+                            <input class="form-check-input filter" type="checkbox" value="" id="platformerFilter">
+                            <label class="form-check-label" for="platformerFilter">
+                              Platformer
+                            </label>
+                        </div>
+                        <div class="form-check" onclick="HandleFilter('fighter')">
+                            <input class="form-check-input filter" type="checkbox" value="" id="fighterFilter">
+                            <label class="form-check-label" for="fighterFilter">
+                              Fighter
+                            </label>
+                        </div>
+                        <div class="form-check" onclick="HandleFilter('rpg')">
+                            <input class="form-check-input filter" type="checkbox" value="" id="rpgFilter">
+                            <label class="form-check-label" for="rpgFilter">
+                              RPG
+                            </label>
+                        </div> <br />
+                        <h2>Release date</h2>
+                        <div class="form-check" onclick="HandleFilter('before2000')">
+                            <input class="form-check-input filter" type="checkbox" value="" id="before2000Filter">
+                            <label class="form-check-label" for="before2000Filter">
+                              Before 2000
+                            </label>
+                        </div>
+                        <div class="form-check" onclick="HandleFilter('2000-2010')">
+                            <input class="form-check-input filter" type="checkbox" value="" id="2000-2010Filter">
+                            <label class="form-check-label" for="2000-2010Filter">
+                              2000-2010
+                            </label>
+                        </div>
+                        <div class="form-check" onclick="HandleFilter('2010-Present')">
+                            <input class="form-check-input filter" type="checkbox" value="" id="2010-PresentFilter">
+                            <label class="form-check-label" for="2010-PresentFilter">
+                              2010-Present
+                            </label>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-9" id="games">
+                        <nav>
+                            <ul class="pagination justify-content-center" style="margin-top: 10px;">
+                              <li class="page-item btn" onclick="HandlePageSwitch('1')"  style="margin-right: 10px;">1</li>
+                              <li class="page-item btn" onclick="HandlePageSwitch('2')">2</li>
+                            </ul>
+                          </nav>
+                        <div class="container overflow-auto">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 action shooter 2010-Present" onclick="LoadDetailsPage('Overwatch')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/OverwatchOriginsEdition.jpg" class="img-fluid" alt="Overwatch Origins Edition">
+                                        <h6 class="gameTitle">Overwatch Origins Edition</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 rpg 2010-Present" onclick="LoadDetailsPage('PokemonSword')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/PokemonSword.jpg" class="img-fluid" alt="Pokemon Sword Version">
+                                        <h6 class="gameTitle">Pokemon Sword</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 platformer before2000" onclick="LoadDetailsPage('Mario')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/SuperMarioBros.png" class="img-fluid" alt="Super Mario Bros.">
+                                        <h6 class="gameTitle">Super Mario Bros.</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 fighter 2000-2010" onclick="LoadDetailsPage('Smash')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/SuperSmashBrosMelee.jpg" class="img-fluid" alt="Super Smash Brothers Melee">
+                                        <h6 class="gameTitle">Super Smash Brothers Melee</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 puzzle platformer 2000-2010" onclick="LoadDetailsPage('Banjo-Kazooie')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/Banjo-Kazooie.jpg" class="img-fluid" alt="Banjo-Kazooie Nuts & Bolts">
+                                        <h6 class="gameTitle">Banjo-Kazooie Nuts & Bolts</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 puzzle 2000-2010" onclick="LoadDetailsPage('BeautifulKatamari')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/BeautifulKatamari.jpg" class="img-fluid" alt="Beautiful Katamari">
+                                        <h6 class="gameTitle">Beautiful Katamari</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 action shooter 2010-Present" onclick="LoadDetailsPage('BlackOps2')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/BlackOps2.jpg" class="img-fluid" alt="Call of Duty: Black ops 2">
+                                        <h6 class="gameTitle">Call of Duty: Black ops 2</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 action shooter 2010-Present" onclick="LoadDetailsPage('Borderlands2')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/Borderlands2.jpg" class="img-fluid" alt="Borderlands 2">
+                                        <h6 class="gameTitle">Borderlands 2</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 action 2000-2010" onclick="LoadDetailsPage('CastleCrashers')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/CastleCrashers.jpg" class="img-fluid" alt="Castle Crashers">
+                                        <h6 class="gameTitle">Castle Crashers</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 platformer 2010-Present" onclick="LoadDetailsPage('GettingOverIt')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/GettingOverIt.jpg" class="img-fluid" alt="Getting Over It with Bennett Foddy">
+                                        <h6 class="gameTitle">Getting Over It with Bennett Foddy</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 action shooter 2000-2010" onclick="LoadDetailsPage('GTA')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/GTA.jpg" class="img-fluid" alt="Grand Theft Auto: Vice City">
+                                        <h6 class="gameTitle">Grand Theft Auto: Vice City</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page1 action shooter 2010-Present" onclick="LoadDetailsPage('HaloReach')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/HaloReach.jpg" class="img-fluid" alt="Halo Reach">
+                                        <h6 class="gameTitle">Halo Reach</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 shooter 2000-2010" onclick="LoadDetailsPage('L4D2')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/L4D2.jpg" class="img-fluid" alt="Left 4 Dead 2">
+                                        <h6 class="gameTitle">Left 4 Dead 2</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 2000-2010" onclick="LoadDetailsPage('LEGOStarWars')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/LEGOStarWars.jpg" class="img-fluid" alt="LEGO Star Wars">
+                                        <h6 class="gameTitle">LEGO Star Wars</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 simulation 2000-2010" onclick="LoadDetailsPage('Minecraft')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/Minecraft.jpg" class="img-fluid" alt="Minecraft">
+                                        <h6 class="gameTitle">Minecraft</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 fighter 2000-2010" onclick="LoadDetailsPage('MK9')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/MortalKombat.jpg" class="img-fluid" alt="Mortal Kombat 9">
+                                        <h6 class="gameTitle">Mortal Kombat 9</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 platformer 2000-2010" onclick="LoadDetailsPage('NPlus')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/NPlus.jpg" class="img-fluid" alt="N+">
+                                        <h6 class="gameTitle">N+</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 puzzle platformer before2000" onclick="LoadDetailsPage('NWC')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/NWC.png" class="img-fluid" alt="Nintendo World Championship">
+                                        <h6 class="gameTitle">Nintendo World Championship</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 puzzle 2010-Present" onclick="LoadDetailsPage('Portal2')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/Portal2.jpg" class="img-fluid" alt="Portal 2">
+                                        <h6 class="gameTitle">Portal 2</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 rpg 2010-Present" onclick="LoadDetailsPage('Skyrim')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/Skyrim.jpg" class="img-fluid" alt="Elder Scrolls 5: Skyrim">
+                                        <h6 class="gameTitle">Elder Scrolls 5: Skyrim</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 action shooter 2000-2010" onclick="LoadDetailsPage('Battlefront2')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/StarWarsBattlefront2.jpg" class="img-fluid" alt="Star Wars Battlefront 2">
+                                        <h6 class="gameTitle">Star Wars Battlefront 2</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 platformer 2010-Present" onclick="LoadDetailsPage('SuperMeatBoy')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/SuperMeatBoy.jpg" class="img-fluid" alt="Super Meat Boy">
+                                        <h6 class="gameTitle">Super Meat Boy</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 puzzle before2000" onclick="LoadDetailsPage('Tetris')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/Tetris.jpg" class="img-fluid" alt="Tetris">
+                                        <h6 class="gameTitle">Tetris</h6>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 border border-3 border-dark rounded game page2 simulation 2000-2010" onclick="LoadDetailsPage('VivaPinata')">
+                                    <a href="../detailsPages/DetailTemplate.html" class="gameLink">
+                                        <img src="../images/GameImagesSmall/VivaPinata.jpg" class="img-fluid" alt="Viva Piñata: Trouble in Paradise">
+                                        <h6 class="gameTitle">Viva Piñata: Trouble in Paradise</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <nav>
+                            <ul class="pagination justify-content-center" style="margin-top: 10px;">
+                              <li class="page-item btn" onclick="HandlePageSwitch('1')"  style="margin-right: 10px;">1</li>
+                              <li class="page-item btn" onclick="HandlePageSwitch('2')">2</li>
+                            </ul>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <footer>
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <div class="me-5 d-none d-lg-block">
+                </div>
+
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Legion Gaming
+                            </h6>
+                            <div class="social-links mt-3">
+                                <p class="fs-5 px-2 link-dark" href="#!"><i class="bi-twitter"> Add Your@</i></p>
+                                <p class="fs-5 px-2 link-dark" href="#!"><i class="bi-facebook"> Add Your@</i></p>
+                                <p class="fs-5 px-2 link-dark" href="#!"><i class="bi-linkedin">Add Your@</i></p>
+                                <p class="fs-5 px-2 link-dark" href="#!"><i class="bi-youtube">Add Your@</i></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="./Shop.html" class="text-reset">PC Games</a>
+                            </p>
+                            <p>
+                                <a href="./Shop.html" class="text-reset">Nintendo Games</a>
+                            </p>
+                            <p>
+                                <a href="./Shop.html" class="text-reset">Xbox One Games</a>
+                            </p>
+                            <p>
+                                <a href="./Shop.html" class="text-reset">Playstation 4 Games</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="./Shop.html" class="text-reset">Products</a>
+                            </p>
+                            <p>
+                                <a href="./Faq.html" class="text-reset">FAQ</a>
+                            </p>
+                            <p>
+                                <a href="./Cart.html" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="./Contact.html" class="text-reset">Help</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Contact
+                            </h6>
+                            <p><i class="fas fa-home me-3"></i> Add Your@</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                unmuktad@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i>Add Your@</p>
+                            <p><i class="fas fa-print me-3"></i> Add Your@</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2024 Copyright:
+                <a class="text-reset fw-bold" href="">Invincible Gaming</a>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+</body>
+</html>
