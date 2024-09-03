@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background-color: rgb(204, 204, 204);
+    padding: 0;
+}
+
+.main {
+    background-color: rgba(221, 221, 221, 0.507);
+    position: absolute;
+    width: 30%;
+    height: 75%;
+    border-radius: 15px;
+    outline: solid;
+    outline-width: 2px;
+    outline-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Text {
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    height: 7%;
+    top: 1%;
+}
+
+.username {
+    border: none;
+    background-color: rgb(204, 204, 204);
+    width: 80%;
+    height: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.usernameLogin {
+    border: none;
+    background-color: rgb(204, 204, 204);
+    width: 80%;
+    height: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.email {
+    border: none;
+    background-color: rgb(204, 204, 204);
+    width: 80%;
+    height: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.post {
+    background-color: rgba(0, 255, 255, 0);
+    height: auto;
+}
+
+.posttext {
+    padding-bottom: 5%;
+    max-width: 10%;
+}
+
+.owner {
+    font-size: 17px;
+    top: 0%;
+}
+
+.password {
+    border: none;
+    background-color: rgb(204, 204, 204);
+    width: 80%;
+    height: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.posts {
+    background-color: rgba(0, 0, 255, 0);
+    position: absolute; 
+    transform: translate(-50%, 0);
+    left: 50%;
+    width: 20%;
+    top: 8%;
+    height: auto;
+}
+
+tr {
+    background-color: red;
+}
+
+.submit {
+    cursor: pointer;
+    border: none;
+    background-color: rgba(148, 148, 148, 0.493);
+    width: 80%;
+    height: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+    outline: solid;
+    outline-width: 3px;
+}
+
+.alreadyText {
+    border: none;
+    background-color: rgba(148, 148, 148, 0.493);
+    width: 80%;
+    height: 10%;    
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    position: absolute;
+    text-align: center;
+    line-height: 2.25;
+    display: inline-block;
+    vertical-align: middle;
+    left: 50%;
+    bottom: 0%;
+    color: black;
+    text-decoration: none;
+    outline: solid;
+    outline-width: 3px;
+    transform: translate(-50%, -50%);
+}
